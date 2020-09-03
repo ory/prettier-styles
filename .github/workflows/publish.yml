@@ -1,0 +1,32 @@
+name: Publish to npm registry
+
+on:
+  release:
+    types:
+      - created
+  workflow_dispatch:
+    inputs:
+      version:
+        required: true
+        description: The version to release
+
+jobs:
+  btp:
+    runs-on: ubuntu-latest
+    name: "Build -> Test -> Publish"
+    steps:
+      - uses: actions/checkout@v2
+#      - uses: actions/setup-node@v1
+#        with:
+#          node-version: '14.x'
+#          registry-url: 'https://registry.npmjs.org'
+      - run: npm ci
+      - run: npm build
+      - run: npm test
+      - name: Check if the version in package.json matches
+        run: '[ "v$(cat package.json | jq -r .version)" = "$RELEASE_VERSION" ]'
+        env:
+          RELEASE_VERSION: ${{ github.event.inputs.version || github.ref }}
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_AENEASR }}
