@@ -23,8 +23,14 @@ jobs:
       - run: npm ci
       - run: npm build
       - run: npm test
-      - name: Check if the version in package.json matches
-        run: '[ "v$(cat package.json | jq -r .version)" = "$RELEASE_VERSION" ]'
+      - name: Bump version
+        run: |-
+          cat <<< $(jq '.version = "1.0.1"' package.json) > package.json
+          git config --local user.email "zepatrik@users.noreply.github.com"
+          git config --local user.name "zepatrik"
+          git add package.json
+          git commit -m "autogen: bump version"
+          git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
         env:
           RELEASE_VERSION: ${{ github.event.inputs.version || github.ref }}
       - run: npm publish
