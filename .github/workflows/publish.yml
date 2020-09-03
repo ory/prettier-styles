@@ -16,10 +16,10 @@ jobs:
     name: "Build -> Test -> Publish"
     steps:
       - uses: actions/checkout@v2
-#      - uses: actions/setup-node@v1
-#        with:
-#          node-version: '14.x'
-#          registry-url: 'https://registry.npmjs.org'
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
       - run: npm ci
       - run: npm build
       - run: npm test
