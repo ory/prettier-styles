@@ -5,7 +5,7 @@
   "main": "prettier.config.js",
   "scripts": {
     "test": "tsc --noEmit && prettier --check prettier.config.ts",
-    "format": "tsc && prettier --write prettier.config.ts",
+    "format": "tsc && prettier --write \"{prettier.config.ts,README.md}\"",
     "build": "tsc"
   },
   "repository": {
