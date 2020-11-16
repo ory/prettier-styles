@@ -1,6 +1,6 @@
 {
   "name": "ory-prettier-styles",
-  "version": "efs/tags/v1.1.0",
+  "version": "1.1.0",
   "description": "The prettier styles used by ORY projects.",
   "main": "prettier.config.js",
   "scripts": {
