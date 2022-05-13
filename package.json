@@ -1,6 +1,6 @@
 {
   "name": "ory-prettier-styles",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "The prettier styles used by ORY projects.",
   "main": "prettier.config.js",
   "scripts": {
