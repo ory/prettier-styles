@@ -19,3 +19,9 @@ jobs:
         run: npm ci
       - name: Test
         run: npm test
+      - name: Format
+        run: npm run format
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'autogen(docs): formatting changes'
