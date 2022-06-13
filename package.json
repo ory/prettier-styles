@@ -4,8 +4,8 @@
   "description": "The prettier styles used by ORY projects.",
   "main": "prettier.config.js",
   "scripts": {
-    "test": "tsc --noEmit && prettier --check prettier.config.ts",
-    "format": "tsc && prettier --write \"{prettier.config.ts,README.md}\"",
+    "test": "tsc --noEmit && prettier --check .",
+    "format": "tsc && prettier --write .",
     "build": "tsc"
   },
   "repository": {
