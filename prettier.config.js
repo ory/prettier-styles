@@ -1,5 +1,5 @@
-"use strict";
-exports.__esModule = true;
+'use strict'
+exports.__esModule = true
 var options = {
     trailingComma: 'none',
     semi: false,
