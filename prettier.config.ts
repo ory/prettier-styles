@@ -1,6 +1,6 @@
-import { Options } from 'prettier'
+import * as prettier from 'prettier'
 
-const options: Options = {
+const options: prettier.Options = {
   trailingComma: 'none',
   semi: false,
   singleQuote: true,
