@@ -4,10 +4,10 @@ inputs:
   npmRunArgs:
     description: The args passed to `npm run`
     required: false
-    default: format:check
+    default: npx prettier --check .
 runs:
   using: composite
   steps:
     - name: Prettier
-      run: npx prettier --check .
+      run: $INPUT_NPMRUNARGS
       shell: bash
