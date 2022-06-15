@@ -4,7 +4,7 @@
   "description": "The prettier styles used by ORY projects.",
   "main": "prettier.config.js",
   "scripts": {
-    "test": "tsc --noEmit && prettier --check . && eslint .",
+    "test": "tsc && eslint . && prettier --check .",
     "format": "tsc && prettier --write .",
     "build": "tsc"
   },

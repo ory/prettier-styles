@@ -4,7 +4,7 @@ const options: prettier.Options = {
   proseWrap: 'always',
   semi: false,
   singleQuote: true,
-  trailingComma: 'none',
+  trailingComma: 'none'
 }
 
 module.exports = options
