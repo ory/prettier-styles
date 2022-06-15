@@ -15,7 +15,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: install
+      - name: Install
         run: npm ci
       - name: Test
         run: npm test
+      - name: Format
+        run: npm run format
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'autogen(docs): formatting changes'
