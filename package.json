@@ -6,7 +6,8 @@
   "scripts": {
     "test": "tsc --noEmit && prettier --check .",
     "format": "tsc && prettier --write .",
-    "build": "tsc"
+    "build": "tsc",
+    "list-published-files": "npm publish --dry-run"
   },
   "repository": {
     "type": "git",
