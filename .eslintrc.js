@@ -11,6 +11,6 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   root: true,
   rules: {
-    'sort-keys': ['error', 'asc', { caseSensitive: true, natural: false }]
+    'sort-keys': ['error']
   }
 }
