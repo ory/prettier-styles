@@ -28,22 +28,29 @@ https://github.com/ory/meta/blob/master/templates/repository/common/CONTRIBUTING
 
 ## Introduction
 
-There are many ways in which you can contribute, beyond writing code. The goal of this document is to provide a high-level
-overview of how you can get involved.
+There are many ways in which you can contribute, beyond writing code. The goal
+of this document is to provide a high-level overview of how you can get
+involved.
 
-_Please note_: We take Ory Prettier Styles's security and our users' trust very seriously. If you believe you have found a
-security issue in Ory Prettier Styles, please responsibly disclose by contacting us at security@ory.sh.
+_Please note_: We take Ory Prettier Styles's security and our users' trust very
+seriously. If you believe you have found a security issue in Ory Prettier
+Styles, please responsibly disclose by contacting us at security@ory.sh.
 
-First: As a potential contributor, your changes and ideas are welcome at any hour of the day or night, weekdays, weekends, and
-holidays. Please do not ever hesitate to ask a question or send a pull request.
+First: As a potential contributor, your changes and ideas are welcome at any
+hour of the day or night, weekdays, weekends, and holidays. Please do not ever
+hesitate to ask a question or send a pull request.
 
-If you are unsure, just ask or submit the issue or pull request anyways. You won't be yelled at for giving it your best effort.
-The worst that can happen is that you'll be politely asked to change something. We appreciate any sort of contributions, and don't
-want a wall of rules to get in the way of that.
+If you are unsure, just ask or submit the issue or pull request anyways. You
+won't be yelled at for giving it your best effort. The worst that can happen is
+that you'll be politely asked to change something. We appreciate any sort of
+contributions, and don't want a wall of rules to get in the way of that.
 
-That said, if you want to ensure that a pull request is likely to be merged, talk to us! You can find out our thoughts and ensure
-that your contribution won't clash or be obviated by Ory Prettier Styles's normal direction. A great way to do this is via
-[Ory Prettier Styles Discussions](https://github.com/orgs/ory/discussions) or the [Ory Chat](https://www.ory.sh/chat).
+That said, if you want to ensure that a pull request is likely to be merged,
+talk to us! You can find out our thoughts and ensure that your contribution
+won't clash or be obviated by Ory Prettier Styles's normal direction. A great
+way to do this is via
+[Ory Prettier Styles Discussions](https://github.com/orgs/ory/discussions) or
+the [Ory Chat](https://www.ory.sh/chat).
 
 ## FAQ
 
@@ -57,7 +64,8 @@ that your contribution won't clash or be obviated by Ory Prettier Styles's norma
 
 - I want to talk to other Ory Prettier Styles users. [How can I become a part of the community?](#communication)
 
-- I would like to know what I am agreeing to when I contribute to Ory Prettier Styles. Does Ory have
+- I would like to know what I am agreeing to when I contribute to Ory Prettier
+  Styles. Does Ory have
   [a Contributors License Agreement?](https://cla-assistant.io/ory/prettier-styles)
 
 - I would like updates about new versions of Ory Prettier Styles.
@@ -70,17 +78,19 @@ If you want to start contributing code right away, we have a
 
 There are many other ways you can contribute without writing any code. Here are a few things you can do to help out:
 
-- **Give us a star.** It may not seem like much, but it really makes a difference. This is something that everyone can do to help
-  out Ory Prettier Styles. Github stars help the project gain visibility and stand out.
+- **Give us a star.** It may not seem like much, but it really makes a
+  difference. This is something that everyone can do to help out Ory Prettier
+  Styles. Github stars help the project gain visibility and stand out.
 
 - **Join the community.** Sometimes helping people can be as easy as listening to their problems and offering a different
   perspective. Join our Slack, have a look at discussions in the forum and take part in our weekly hangout. More info on this in
   [Communication](#communication).
 
-- **Helping with open issues.** We have a lot of open issues for Ory Prettier Styles and some of them may lack necessary
-  information, some are duplicates of older issues. You can help out by guiding people through the process of filling out the
-  issue template, asking for clarifying information, or pointing them to existing issues that match their description of the
-  problem.
+- **Helping with open issues.** We have a lot of open issues for Ory Prettier
+  Styles and some of them may lack necessary information, some are duplicates of
+  older issues. You can help out by guiding people through the process of
+  filling out the issue template, asking for clarifying information, or pointing
+  them to existing issues that match their description of the problem.
 
 - **Reviewing documentation changes.** Most documentation just needs a review for proper spelling and grammar. If you think a
   document can be improved in any way, feel free to hit the `edit` button at the top of the page. More info on contributing to
@@ -94,22 +104,26 @@ There are many other ways you can contribute without writing any code. Here are 
 We use [Slack](https://www.ory.sh/chat). You are welcome to drop in and ask questions, discuss bugs and feature requests, talk to
 other users of Ory, etc.
 
-Check out [Ory Prettier Styles Discussions](https://github.com/orgs/ory/discussions). This is a great place for in-depth
-discussions and lots of code examples, logs and similar data.
+Check out
+[Ory Prettier Styles Discussions](https://github.com/orgs/ory/discussions). This
+is a great place for in-depth discussions and lots of code examples, logs and
+similar data.
 
 You can also join our community hangout, if you want to speak to the Ory team directly or ask some questions. You can find more
 info on the hangouts in [Slack](https://www.ory.sh/chat).
 
-If you want to receive regular notifications about updates to Ory Prettier Styles, consider joining the mailing list. We will
-_only_ send you vital information on the projects that you are interested in.
+If you want to receive regular notifications about updates to Ory Prettier
+Styles, consider joining the mailing list. We will _only_ send you vital
+information on the projects that you are interested in.
 
 Also [follow us on twitter](https://twitter.com/orycorp).
 
 ## Contributing Code
 
-Unless you are fixing a known bug, we **strongly** recommend discussing it with the core team via a GitHub issue or
-[in our chat](https://www.ory.sh/chat) before getting started to ensure your work is consistent with Ory Prettier Styles's roadmap
-and architecture.
+Unless you are fixing a known bug, we **strongly** recommend discussing it with
+the core team via a GitHub issue or [in our chat](https://www.ory.sh/chat)
+before getting started to ensure your work is consistent with Ory Prettier
+Styles's roadmap and architecture.
 
 All contributions are made via pull requests. To make a pull request, you will need a GitHub account; if you are unclear on this
 process, see GitHub's documentation on [forking](https://help.github.com/articles/fork-a-repo) and
@@ -121,7 +135,7 @@ Before creating a pull request, go through this checklist:
 1. Run the full project test suite with the `go test -tags sqlite ./...` (or equivalent) command and confirm that it passes.
 1. Run `make format` if a `Makefile` is available, `gofmt -s` if the project is written in Go, `npm run format` if the project is
    written for NodeJS.
-1. Ensure that each commit has a descriptive prefix. This ensures a uniform commit history and helps structure the changelog.  
+1. Ensure that each commit has a descriptive prefix. This ensures a uniform commit history and helps structure the changelog.
    Please refer to this
    [list of prefixes for Prettier Styles](https://github.com/ory/prettier-styles/blob/master/.github/semantic.yml) for an
    overview.
@@ -158,9 +172,10 @@ Reviewers will approve the pull request once they are satisfied with the patch.
 
 ## Documentation
 
-Please provide documentation when changing, removing, or adding features. Documentation resides in the project's
-[docs](https://github.com/ory/prettier-styles/tree/master/docs) folder. Generate API and configuration reference documentation
-using `cd docs; npm run gen`.
+Please provide documentation when changing, removing, or adding features.
+Documentation resides in the project's
+[docs](https://github.com/ory/prettier-styles/tree/master/docs) folder. Generate
+API and configuration reference documentation using `cd docs; npm run gen`.
 
 For further instructions please head over to [docs/README.md](https://github.com/ory/prettier-styles/blob/master/README.md).
 
@@ -211,12 +226,16 @@ back.
   disability, ethnicity, religion, or similar personal characteristic.
 - Please avoid using nicknames that might detract from a friendly, safe and welcoming environment for all.
 - Be kind and courteous. There is no need to be mean or rude.
-- We will exclude you from interaction if you insult, demean or harass anyone. In particular, we do not tolerate behavior that
-  excludes people in socially marginalized groups.
-- Private harassment is also unacceptable. No matter who you are, if you feel you have been or are being harassed or made
-  uncomfortable by a community member, please contact one of the channel ops or a member of the Ory Prettier Styles core team
-  immediately.
-- Likewise any spamming, trolling, flaming, baiting or other attention-stealing behaviour is not welcome.
+- We will exclude you from interaction if you insult, demean or harass anyone.
+  In particular, we do not tolerate behavior that excludes people in socially
+  marginalized groups.
+- Private harassment is also unacceptable. No matter who you are, if you feel
+  you have been or are being harassed or made uncomfortable by a community
+  member, please contact one of the channel ops or a member of the Ory Prettier
+  Styles core team immediately.
+- Likewise any spamming, trolling, flaming, baiting or other attention-stealing
+  behaviour is not welcome.
 
-We welcome discussion about creating a welcoming, safe, and productive environment for the community. If you have any questions,
-feedback, or concerns [please let us know](https://www.ory.sh/chat).
+We welcome discussion about creating a welcoming, safe, and productive
+environment for the community. If you have any questions, feedback, or concerns
+[please let us know](https://www.ory.sh/chat).
