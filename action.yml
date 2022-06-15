@@ -8,12 +8,6 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Install Prettier if it doesn't exist
-      run: |-
-        if [ ! -f node_modules/.bin/prettier ]; then
-          bash <(curl -s https://raw.githubusercontent.com/ory/ci/master/src/scripts/install/prettier.sh)
-        fi
-      shell: bash
     - name: Check
-      run: npm run $INPUT_NPMRUNARGS
+      run: npx prettier --check .
       shell: bash
