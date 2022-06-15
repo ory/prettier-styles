@@ -1,5 +1,7 @@
 # Ory prettier-styles
 
+![CI status](https://github.com/ory/prettier-styles/actions/workflows/test/badge.svg)
+
 The prettier config used by all ORY projects.
 
 # GitHub Action
