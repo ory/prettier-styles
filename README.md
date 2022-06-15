@@ -1,6 +1,6 @@
 # Ory prettier-styles
 
-![CI status](https://github.com/ory/prettier-styles/actions/workflows/test/badge.svg)
+![CI status](https://github.com/ory/prettier-styles/actions/workflows/test.yml/badge.svg)
 
 The prettier config used by all ORY projects.
 
