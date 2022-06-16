@@ -1,9 +1,9 @@
 'use strict'
 exports.__esModule = true
 var options = {
-  trailingComma: 'none',
+  proseWrap: 'always',
   semi: false,
   singleQuote: true,
-  proseWrap: 'always'
+  trailingComma: 'none'
 }
 module.exports = options

@@ -1,10 +1,10 @@
 import * as prettier from 'prettier'
 
 const options: prettier.Options = {
-  trailingComma: 'none',
+  proseWrap: 'always',
   semi: false,
   singleQuote: true,
-  proseWrap: 'always'
+  trailingComma: 'none'
 }
 
 module.exports = options
