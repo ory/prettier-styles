@@ -11,9 +11,13 @@
     "url": "git+https://github.com/ory/prettier-styles.git"
   },
   "main": "prettier.config.js",
+  "files": [
+    "prettier.config.js"
+  ],
   "scripts": {
     "build": "tsc",
     "format": "tsc && sort-package-json && prettier --write .",
+    "list-published-files": "npm publish --dry-run",
     "test": "tsc --noEmit && sort-package-json --check && eslint && prettier --check ."
   },
   "devDependencies": {
