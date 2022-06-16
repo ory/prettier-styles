@@ -2,27 +2,29 @@
   "name": "ory-prettier-styles",
   "version": "1.2.0",
   "description": "The prettier styles used by ORY projects.",
-  "main": "prettier.config.js",
-  "scripts": {
-    "test": "tsc --noEmit && prettier --check .",
-    "format": "tsc && prettier --write .",
-    "build": "tsc",
-    "list-published-files": "npm publish --dry-run"
+  "homepage": "https://github.com/ory/prettier-styles",
+  "bugs": {
+    "url": "https://github.com/ory/prettier-styles/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ory/prettier-styles.git"
   },
-  "bugs": {
-    "url": "https://github.com/ory/prettier-styles/issues"
-  },
+  "main": "prettier.config.js",
   "files": [
     "prettier.config.js"
   ],
-  "homepage": "https://github.com/ory/prettier-styles",
+  "scripts": {
+    "build": "tsc",
+    "format": "tsc && sort-package-json && prettier --write .",
+    "list-published-files": "npm publish --dry-run",
+    "test": "tsc --noEmit && sort-package-json --check && prettier --check ."
+  },
   "devDependencies": {
+    "@types/node": "^17.0.33",
+    "@types/prettier": "^2.6.3",
     "prettier": "^2.6.2",
-    "typescript": "^4.6.4",
-    "@types/node": "^17.0.33"
+    "sort-package-json": "^1.57.0",
+    "typescript": "^4.6.4"
   }
 }
