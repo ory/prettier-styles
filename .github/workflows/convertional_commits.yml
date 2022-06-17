@@ -1,5 +1,3 @@
-name: Enforce conventional commit message
-
 on:
   # pull_request_target:
   pull_request:
