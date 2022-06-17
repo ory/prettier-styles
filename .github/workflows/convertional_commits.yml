@@ -17,7 +17,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-
           # Configure which types are allowed.
           # Default: https://github.com/commitizen/conventional-commit-types
           types: |
