@@ -54,9 +54,8 @@ jobs:
           # the default error message that is shown when the pattern doesn't match.
           # The variables `subject` and `title` can be used within the message.
           subjectPatternError: |
-            The subject "{subject}" found in the pull request title "{title}"
-            didn't match the configured pattern. Please ensure that the subject
-            doesn't start with an uppercase character.
+            Please make the subject be lowercase. Yours starts with an uppercase letter:
+            {subject}
 
           # If the PR contains one of these labels, the validation is skipped.
           # Multiple labels can be separated by newlines.
