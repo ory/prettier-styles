@@ -1,7 +1,8 @@
 name: conventional commits
 
 on:
-  pull_request_target:
+  # pull_request_target:  # uncomment this to enable Pull Requests from forks
+  pull_request:
     types:
       - opened
       - edited
