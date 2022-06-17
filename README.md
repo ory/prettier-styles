@@ -2,7 +2,24 @@
 
 ![CI status](https://github.com/ory/prettier-styles/actions/workflows/test.yml/badge.svg)
 
-The prettier config used by all ORY projects.
+The [Prettier](https://prettier.io/) configuration used by all ORY projects.
+
+## How to use
+
+To use the Prettier configuration without modifications, add this line to your **package.json** file:
+
+```json
+  "prettier": "ory-prettier-styles",
+```
+
+To use the Prettier configuration with modifications, create a file **.prettierrc.js** with this content:
+
+```js
+module.exports = {
+  ...require('ory-prettier-styles'),
+  // your custom Prettier settings here
+}
+```
 
 # GitHub Action
 

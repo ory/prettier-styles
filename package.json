@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/ory/prettier-styles.git"
   },
+  "prettier": "ory-prettier-styles",
   "main": "prettier.config.js",
   "files": [
     "prettier.config.js"
