@@ -6,17 +6,19 @@ The [Prettier](https://prettier.io/) configuration used by all ORY projects.
 
 ### Local setup
 
-To use the Prettier configuration without modifications, add this line to your **package.json** file:
+To use the Prettier configuration without modifications, add this line to your
+**package.json** file:
 
 ```json
   "prettier": "ory-prettier-styles",
 ```
 
-To use the Prettier configuration with modifications, create a file **.prettierrc.js** with this content:
+To use the Prettier configuration with modifications, create a file
+**.prettierrc.js** with this content:
 
 ```js
 module.exports = {
-  ...require('ory-prettier-styles'),
+  ...require('ory-prettier-styles')
   // your custom Prettier settings here
 }
 ```
