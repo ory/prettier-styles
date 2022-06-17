@@ -55,7 +55,7 @@ jobs:
           # The variables `subject` and `title` can be used within the message.
           subjectPatternError: |
             The subject should start with a lowercase letter. Yours starts uppercase:
-            {subject}
+            "{subject}"
 
           # If the PR contains one of these labels, the validation is skipped.
           # Multiple labels can be separated by newlines.
