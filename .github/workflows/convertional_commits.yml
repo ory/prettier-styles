@@ -54,7 +54,7 @@ jobs:
           # the default error message that is shown when the pattern doesn't match.
           # The variables `subject` and `title` can be used within the message.
           subjectPatternError: |
-            Please make the subject be lowercase. Yours starts with an uppercase letter:
+            The subject should start with a lowercase letter. Yours starts uppercase:
             {subject}
 
           # If the PR contains one of these labels, the validation is skipped.
