@@ -4,7 +4,7 @@
 
 The [Prettier](https://prettier.io/) configuration used by all ORY projects.
 
-## How to use
+### Local setup
 
 To use the Prettier configuration without modifications, add this line to your **package.json** file:
 
@@ -21,7 +21,7 @@ module.exports = {
 }
 ```
 
-# GitHub Action
+### GitHub Action
 
 This also defines a GitHub action to use for format checking. Usage similar to:
 
