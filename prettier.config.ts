@@ -3,7 +3,7 @@ import * as prettier from "prettier"
 const options: prettier.Options = {
   proseWrap: "always",
   semi: false,
-  trailingComma: "none"
+  trailingComma: "all",
 }
 
 module.exports = options

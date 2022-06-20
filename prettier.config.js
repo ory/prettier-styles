@@ -3,6 +3,6 @@ exports.__esModule = true
 var options = {
   proseWrap: "always",
   semi: false,
-  trailingComma: "none"
+  trailingComma: "all",
 }
 module.exports = options
