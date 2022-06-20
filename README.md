@@ -18,7 +18,7 @@ To use the Prettier configuration with modifications, create a file
 
 ```js
 module.exports = {
-  ...require('ory-prettier-styles')
+  ...require("ory-prettier-styles"),
   // your custom Prettier settings here
 }
 ```
