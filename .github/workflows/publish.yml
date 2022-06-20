@@ -13,13 +13,13 @@ on:
 jobs:
   btp:
     runs-on: ubuntu-latest
-    name: 'Build -> Test -> Publish'
+    name: "Build -> Test -> Publish"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: "14.x"
+          registry-url: "https://registry.npmjs.org"
       - run: npm ci
       - run: npm build
       - run: npm test
@@ -28,7 +28,7 @@ jobs:
           cat <<< $(jq '.version = (env.RELEASE_VERSION | sub("(^refs/tags/v)|(^v)"; ""))' package.json) > package.json
           git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git config --local user.name "${GITHUB_ACTOR}"
-          git add package.json
+          git add package.json package-lock.json
           git commit -m "autogen: bump version"
           git push -f "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
         env:
