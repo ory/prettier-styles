@@ -26,8 +26,8 @@ jobs:
       - name: Bump version
         run: |-
           cat <<< $(jq '.version = (env.RELEASE_VERSION | sub("(^refs/tags/v)|(^v)"; ""))' package.json) > package.json
-          git config --local user.email "zepatrik@users.noreply.github.com"
-          git config --local user.name "zepatrik"
+          git config --local user.email "ory-bot@users.noreply.github.com"
+          git config --local user.name "ory-bot"
           git add package.json package-lock.json
           git commit -m "autogen: bump version"
           git push -f "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
