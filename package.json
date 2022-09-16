@@ -16,7 +16,6 @@
   ],
   "scripts": {
     "build": "tsc",
-    "format": "tsc && sort-package-json && prettier --write .",
     "list-published-files": "npm publish --dry-run",
     "test": "tsc --noEmit && sort-package-json --check && eslint && prettier --check ."
   },
