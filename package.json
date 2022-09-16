@@ -19,7 +19,6 @@
     "list-published-files": "npm publish --dry-run",
     "test": "tsc --noEmit && sort-package-json --check && eslint && prettier --check ."
   },
-  "prettier": "ory-prettier-styles",
   "devDependencies": {
     "@types/node": "^17.0.45",
     "@types/prettier": "^2.6.3",
